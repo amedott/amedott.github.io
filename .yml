@@ -1,0 +1,2 @@
+- name: lastfm chart
+  uses: darynwhite/lastfm-chart@0.1
