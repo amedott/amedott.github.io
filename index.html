@@ -52,25 +52,10 @@
 
             <div id="content">
                 <h1>last listened to:</h1>
-                <div class="header__inner">
-                    <p>&#127911; <span id="song">&#8987;</span></p>
-                </div>
-                <div class="header__inner">
-                    <p><small><a href="http://last.fm" target="_blank">last.fm</a>で最近再生した曲：</small> |
-                        <small>powered by <a href="https://github.com/biancarosa/lastfm-last-played"
-                                target="_blank">@biancarosa/lastfm-last-played</a></small></p>
-                </div>
-                <script type="text/javascript">
-                    let user = 'youkame';
-                    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
-                    let song = document.querySelector('#song');
-                    fetch(url)
-                        .then(function (response) {
-                            return response.json()
-                        }).then(function (json) {
-                            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
-                        });
-                </script>
+                <div id="player">
+    <iframe id="player-frame" src="https://rawcdn.githack.com/amedott/lastfm-now-playing/9e3969d083c6acfc0827e757aeac01586b82e004/index.html" frameborder="0" scrolling="no">
+    </iframe>
+</div>
 </div>
             </div>
 
