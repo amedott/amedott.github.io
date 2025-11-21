@@ -52,17 +52,22 @@
 
             <div id="content">
                 <h1>last listened to:</h1>
-                <div id="player">
-    <iframe id="player-frame" src="https://rawcdn.githack.com/amedott/lastfm-now-playing/9e3969d083c6acfc0827e757aeac01586b82e004/index.html" frameborder="0" scrolling="no">
-    </iframe>
-</div>
-</div>
-            </div>
-
-            <div id="footer">
-                an impersonal personal site
+                <div id="player" class="player-container">
+        <iframe 
+            class="lastfm-embed"
+            src="https://ame.is-not.cool/lastfm-now-playing/?username=youkame" 
+            title="Now Playing on Last.fm"
+            loading="lazy"
+            allow="autoplay"
+            referrerpolicy="no-referrer">
+        </iframe>
             </div>
         </div>
+
+        <div id="footer">
+            an impersonal personal site
+        </div>
+    </div>
     </div>
 
 </body>
